@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryAPP.Domain", "DeliveryAPP.Domain\DeliveryAPP.Domain.csproj", "{796E471B-A98A-413F-B98F-6050712742BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeliveryAPP.Domain", "DeliveryAPP.Domain\DeliveryAPP.Domain.csproj", "{796E471B-A98A-413F-B98F-6050712742BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryAPP.Repository", "DeliveryAPP.Repository\DeliveryAPP.Repository.csproj", "{7FE7B1D8-973D-47E7-A714-F7DB3242FF50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeliveryAPP.Repository", "DeliveryAPP.Repository\DeliveryAPP.Repository.csproj", "{7FE7B1D8-973D-47E7-A714-F7DB3242FF50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryAPP.Service", "DeliveryAPP.Service\DeliveryAPP.Service.csproj", "{A4DE397F-0F3F-464F-A0EC-64291F30BDF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeliveryAPP.Service", "DeliveryAPP.Service\DeliveryAPP.Service.csproj", "{A4DE397F-0F3F-464F-A0EC-64291F30BDF1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeliveryAPP.DDD", "DeliveryAPP.DDD", "{69AB91DE-E99C-42BA-A2FC-171C521B3FC2}"
 EndProject

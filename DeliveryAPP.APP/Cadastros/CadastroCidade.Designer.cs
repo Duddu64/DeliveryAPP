@@ -28,10 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "CadastroCidade";
+            SuspendLayout();
+            // 
+            // CadastroCidade
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Name = "CadastroCidade";
+            Text = "CadastroCidade";
+            TransparencyKey = Color.Empty;
+            ResumeLayout(false);
         }
 
         #endregion

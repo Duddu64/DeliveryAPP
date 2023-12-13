@@ -22,7 +22,7 @@ namespace DeliveryAPP.APP.Infra
         public static void ConfiguraServices()
         {
             Services = new ServiceCollection();
-            var strCon = File.ReadAllText();
+            var strCon = File.ReadAllText("Config/DatabaseSettings.txt");
             Services.AddDbContext<MySqlContext>(options =>
             {
                 options.LogTo(Console.WriteLine)

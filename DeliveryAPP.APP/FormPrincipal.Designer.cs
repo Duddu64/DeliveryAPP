@@ -34,13 +34,13 @@ namespace DeliveryAPP.APP
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             formMenuStrip1 = new ReaLTaiizor.Controls.FormMenuStrip();
             cadastrosToolStripMenuItem = new ToolStripMenuItem();
-            sairToolStripMenuItem = new ToolStripMenuItem();
             cadastroDeCidadeToolStripMenuItem = new ToolStripMenuItem();
             cadastroDeClienteToolStripMenuItem = new ToolStripMenuItem();
             cadastroDePedidoToolStripMenuItem = new ToolStripMenuItem();
             cadastroDeProdutoToolStripMenuItem = new ToolStripMenuItem();
             cadastroDeRestauranteToolStripMenuItem = new ToolStripMenuItem();
             cadastroDeCategoriaToolStripMenuItem = new ToolStripMenuItem();
+            sairToolStripMenuItem = new ToolStripMenuItem();
             formMenuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -64,19 +64,13 @@ namespace DeliveryAPP.APP
             cadastrosToolStripMenuItem.Size = new Size(71, 20);
             cadastrosToolStripMenuItem.Text = "Cadastros";
             // 
-            // sairToolStripMenuItem
-            // 
-            sairToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
-            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            sairToolStripMenuItem.Size = new Size(38, 20);
-            sairToolStripMenuItem.Text = "Sair";
-            // 
             // cadastroDeCidadeToolStripMenuItem
             // 
             cadastroDeCidadeToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
             cadastroDeCidadeToolStripMenuItem.Name = "cadastroDeCidadeToolStripMenuItem";
             cadastroDeCidadeToolStripMenuItem.Size = new Size(202, 22);
             cadastroDeCidadeToolStripMenuItem.Text = "Cadastro de Cidade";
+            cadastroDeCidadeToolStripMenuItem.Click += cadastroDeCidadeToolStripMenuItem_Click;
             // 
             // cadastroDeClienteToolStripMenuItem
             // 
@@ -84,6 +78,7 @@ namespace DeliveryAPP.APP
             cadastroDeClienteToolStripMenuItem.Name = "cadastroDeClienteToolStripMenuItem";
             cadastroDeClienteToolStripMenuItem.Size = new Size(202, 22);
             cadastroDeClienteToolStripMenuItem.Text = "Cadastro de Cliente";
+            cadastroDeClienteToolStripMenuItem.Click += cadastroDeClienteToolStripMenuItem_Click;
             // 
             // cadastroDePedidoToolStripMenuItem
             // 
@@ -91,6 +86,7 @@ namespace DeliveryAPP.APP
             cadastroDePedidoToolStripMenuItem.Name = "cadastroDePedidoToolStripMenuItem";
             cadastroDePedidoToolStripMenuItem.Size = new Size(202, 22);
             cadastroDePedidoToolStripMenuItem.Text = "Cadastro de Pedido";
+            cadastroDePedidoToolStripMenuItem.Click += cadastroDePedidoToolStripMenuItem_Click;
             // 
             // cadastroDeProdutoToolStripMenuItem
             // 
@@ -98,6 +94,7 @@ namespace DeliveryAPP.APP
             cadastroDeProdutoToolStripMenuItem.Name = "cadastroDeProdutoToolStripMenuItem";
             cadastroDeProdutoToolStripMenuItem.Size = new Size(202, 22);
             cadastroDeProdutoToolStripMenuItem.Text = "Cadastro de Produto";
+            cadastroDeProdutoToolStripMenuItem.Click += cadastroDeProdutoToolStripMenuItem_Click;
             // 
             // cadastroDeRestauranteToolStripMenuItem
             // 
@@ -105,6 +102,7 @@ namespace DeliveryAPP.APP
             cadastroDeRestauranteToolStripMenuItem.Name = "cadastroDeRestauranteToolStripMenuItem";
             cadastroDeRestauranteToolStripMenuItem.Size = new Size(202, 22);
             cadastroDeRestauranteToolStripMenuItem.Text = "Cadastro de Restaurante";
+            cadastroDeRestauranteToolStripMenuItem.Click += cadastroDeRestauranteToolStripMenuItem_Click;
             // 
             // cadastroDeCategoriaToolStripMenuItem
             // 
@@ -112,6 +110,15 @@ namespace DeliveryAPP.APP
             cadastroDeCategoriaToolStripMenuItem.Name = "cadastroDeCategoriaToolStripMenuItem";
             cadastroDeCategoriaToolStripMenuItem.Size = new Size(202, 22);
             cadastroDeCategoriaToolStripMenuItem.Text = "Cadastro de Categoria";
+            cadastroDeCategoriaToolStripMenuItem.Click += cadastroDeCategoriaToolStripMenuItem_Click;
+            // 
+            // sairToolStripMenuItem
+            // 
+            sairToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
+            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            sairToolStripMenuItem.Size = new Size(38, 20);
+            sairToolStripMenuItem.Text = "Sair";
+            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
             // 
             // FormPrincipal
             // 
@@ -120,6 +127,7 @@ namespace DeliveryAPP.APP
             ClientSize = new Size(599, 460);
             Controls.Add(formMenuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            IsMdiContainer = true;
             MainMenuStrip = formMenuStrip1;
             Name = "FormPrincipal";
             StartPosition = FormStartPosition.CenterScreen;

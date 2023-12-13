@@ -53,13 +53,15 @@
             // 
             // poisonTabControl1
             // 
+            poisonTabControl1.Appearance = TabAppearance.Buttons;
             poisonTabControl1.Controls.Add(tabCadastro);
             poisonTabControl1.Controls.Add(tabConsulta);
-            poisonTabControl1.Location = new Point(0, 59);
+            poisonTabControl1.Dock = DockStyle.Fill;
+            poisonTabControl1.Location = new Point(3, 64);
             poisonTabControl1.Name = "poisonTabControl1";
             poisonTabControl1.Padding = new Point(6, 8);
             poisonTabControl1.SelectedIndex = 0;
-            poisonTabControl1.Size = new Size(800, 391);
+            poisonTabControl1.Size = new Size(794, 383);
             poisonTabControl1.TabIndex = 0;
             poisonTabControl1.Theme = ReaLTaiizor.Enum.Poison.ThemeStyle.Light;
             poisonTabControl1.UseSelectable = true;
@@ -67,10 +69,10 @@
             // tabCadastro
             // 
             tabCadastro.Controls.Add(panel1);
-            tabCadastro.Location = new Point(4, 38);
+            tabCadastro.Location = new Point(4, 41);
             tabCadastro.Name = "tabCadastro";
             tabCadastro.Padding = new Padding(3);
-            tabCadastro.Size = new Size(792, 349);
+            tabCadastro.Size = new Size(786, 338);
             tabCadastro.TabIndex = 0;
             tabCadastro.Text = "Cadastro";
             tabCadastro.UseVisualStyleBackColor = true;
@@ -79,9 +81,10 @@
             // 
             panel1.Controls.Add(btnCancel);
             panel1.Controls.Add(btnSave);
-            panel1.Location = new Point(0, 272);
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Location = new Point(3, 252);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 83);
+            panel1.Size = new Size(780, 83);
             panel1.TabIndex = 0;
             // 
             // btnCancel
@@ -97,7 +100,7 @@
             btnCancel.HoverBackgroundColor = Color.FromArgb(225, 225, 225);
             btnCancel.HoverTextColor = Color.Black;
             btnCancel.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnCancel.Location = new Point(501, 21);
+            btnCancel.Location = new Point(509, 21);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(131, 50);
             btnCancel.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -120,7 +123,7 @@
             btnSave.HoverBackgroundColor = Color.FromArgb(225, 225, 225);
             btnSave.HoverTextColor = Color.Black;
             btnSave.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnSave.Location = new Point(655, 21);
+            btnSave.Location = new Point(646, 21);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(131, 50);
             btnSave.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -134,10 +137,10 @@
             // 
             tabConsulta.Controls.Add(panel2);
             tabConsulta.Controls.Add(poisonDataGridView1);
-            tabConsulta.Location = new Point(4, 35);
+            tabConsulta.Location = new Point(4, 38);
             tabConsulta.Name = "tabConsulta";
             tabConsulta.Padding = new Padding(3);
-            tabConsulta.Size = new Size(792, 352);
+            tabConsulta.Size = new Size(786, 341);
             tabConsulta.TabIndex = 1;
             tabConsulta.Text = "Consulta";
             tabConsulta.UseVisualStyleBackColor = true;
@@ -165,7 +168,7 @@
             btnNew.HoverBackgroundColor = Color.FromArgb(225, 225, 225);
             btnNew.HoverTextColor = Color.Black;
             btnNew.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnNew.Location = new Point(372, 11);
+            btnNew.Location = new Point(372, 7);
             btnNew.Name = "btnNew";
             btnNew.Size = new Size(134, 50);
             btnNew.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -188,7 +191,7 @@
             btnEdit.HoverBackgroundColor = Color.FromArgb(225, 225, 225);
             btnEdit.HoverTextColor = Color.Black;
             btnEdit.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnEdit.Location = new Point(512, 11);
+            btnEdit.Location = new Point(512, 6);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(134, 50);
             btnEdit.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -211,7 +214,7 @@
             btnDel.HoverBackgroundColor = Color.FromArgb(225, 225, 225);
             btnDel.HoverTextColor = Color.Black;
             btnDel.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnDel.Location = new Point(652, 11);
+            btnDel.Location = new Point(649, 7);
             btnDel.Name = "btnDel";
             btnDel.Size = new Size(134, 50);
             btnDel.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -286,17 +289,16 @@
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.PoisonTabControl poisonTabControl1;
-        private TabPage tabCadastro;
-        private Panel panel1;
         private TabPage tabConsulta;
-        private ReaLTaiizor.Controls.ParrotButton btnCancel;
-        private ReaLTaiizor.Controls.ParrotButton btnSave;
         private Panel panel2;
-        private ReaLTaiizor.Controls.ParrotButton btnDel;
-        private ReaLTaiizor.Controls.PoisonDataGridView poisonDataGridView1;
-        private ReaLTaiizor.Controls.ParrotButton btnEdit;
-        private ReaLTaiizor.Controls.ParrotButton btnNew;
+        protected ReaLTaiizor.Controls.PoisonTabControl poisonTabControl1;
+        protected TabPage tabCadastro;
+        protected Panel panel1;
+        protected ReaLTaiizor.Controls.ParrotButton btnCancel;
+        protected ReaLTaiizor.Controls.ParrotButton btnSave;
+        protected ReaLTaiizor.Controls.ParrotButton btnDel;
+        protected ReaLTaiizor.Controls.PoisonDataGridView poisonDataGridView1;
+        protected ReaLTaiizor.Controls.ParrotButton btnEdit;
+        protected ReaLTaiizor.Controls.ParrotButton btnNew;
     }
 }

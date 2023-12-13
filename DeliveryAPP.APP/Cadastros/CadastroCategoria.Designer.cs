@@ -1,6 +1,6 @@
 ﻿namespace DeliveryAPP.APP.Cadastros
 {
-    partial class Categoria
+    partial class CadastroCategoria
     {
         /// <summary>
         /// Required designer variable.

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace DeliveryAPP.APP.Cadastros
 {
-    public partial class CadastroPedido : CadastroBase
+    public partial class CadastroCategoria : CadastroBase
     {
-        public CadastroPedido()
+        public CadastroCategoria()
         {
             InitializeComponent();
         }

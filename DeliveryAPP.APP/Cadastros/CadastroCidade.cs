@@ -14,10 +14,11 @@ using DeliveryAPP.Domain.Base;
 using DeliveryAPP.Domain.Entities;
 using ReaLTaiizor.Controls;
 using ReaLTaiizor.Forms;
+using DeliveryAPP.APP.Base;
 
 namespace DeliveryAPP.APP.Cadastros
 {
-    public partial class CadastroCidade : MaterialForm
+    public partial class CadastroCidade : CadastroBase
     {
 
         public CadastroCidade()

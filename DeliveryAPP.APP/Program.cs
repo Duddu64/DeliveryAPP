@@ -1,3 +1,5 @@
+using DeliveryAPP.APP.Infra;
+
 namespace DeliveryAPP.APP
 {
     internal static class Program
@@ -8,6 +10,7 @@ namespace DeliveryAPP.APP
         [STAThread]
         static void Main()
         {
+            ConfigureDl.ConfiguraServices();
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();

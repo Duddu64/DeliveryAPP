@@ -11,10 +11,10 @@ namespace DeliveryAPP.APP.Model
     {
         public PedidoModel()
         {
-            Item = new List<ItemPedido>();
+            Item = new List<ItemPedidoModel>();
         }
         public int Id { get; set; }
-        public List<ItemPedido> Item { get; set; }
+        public List<ItemPedidoModel> Item { get; set; }
         public DateTime? Datacompra { get; set; }
         public double Valortotal { get; set; }
         public int IdCliente { get; set; }
@@ -23,7 +23,7 @@ namespace DeliveryAPP.APP.Model
         public string? Restaurante { get; set; }
     }
 
-    public class ItemPedido
+    public class ItemPedidoModel
     {
         public int Id { get; set; }
         public int Quantidade { get; set; }

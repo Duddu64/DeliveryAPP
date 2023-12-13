@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DeliveryAPP.APP.Base;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace DeliveryAPP.APP.Cadastros
 {
-    public partial class CadastroProduto : Form
+    public partial class CadastroProduto : CadastroBase
     {
         public CadastroProduto()
         {

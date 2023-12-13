@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DeliveryAPP.APP.Base;
+
 
 namespace DeliveryAPP.APP.Cadastros
 {
-    public partial class Categoria : Form
+    public partial class CadastroRestaurante : CadastroBase
     {
-        public Categoria()
+        public CadastroRestaurante()
         {
             InitializeComponent();
         }

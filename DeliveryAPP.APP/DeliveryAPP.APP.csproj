@@ -8,4 +8,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.14" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="ReaLTaiizor" Version="3.7.9.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeliveryAPP.Domain\DeliveryAPP.Domain.csproj" />
+    <ProjectReference Include="..\DeliveryAPP.Repository\DeliveryAPP.Repository.csproj" />
+    <ProjectReference Include="..\DeliveryAPP.Service\DeliveryAPP.Service.csproj" />
+  </ItemGroup>
+
 </Project>

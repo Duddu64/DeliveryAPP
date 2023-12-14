@@ -10,8 +10,6 @@ using System.Windows.Forms;
 using DeliveryAPP.Domain.Entities;
 using DeliveryAPP.Domain.Base;
 using DeliveryAPP.Service.Validators;
-using DeliveryAPP.Domain.Base;
-using DeliveryAPP.Domain.Entities;
 using ReaLTaiizor.Controls;
 using ReaLTaiizor.Forms;
 using DeliveryAPP.APP.Base;
@@ -25,12 +23,19 @@ namespace DeliveryAPP.APP.Cadastros
 
         public CadastroCidade(IBaseService<Cidade> cidadeService)
         {
+            _cidadeService = cidadeService;
             InitializeComponent();
         }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void PreencheObjeto(Cidade cidade)
         {
-            cidade.Nome = txtNome.Text;
-            cidade.Estado = cboEstado.Text;
+            cidade.Nome = txtName.Text;
+            cidade.Estado = comboUF.Text;
         }
 
         protected override void Salvar()
@@ -54,7 +59,7 @@ namespace DeliveryAPP.APP.Cadastros
 
                 }
 
-               .SelectedIndex = 1;
+                poisonTabControl1.SelectedIndex = 1;
             }
             catch (Exception ex)
             {
@@ -78,15 +83,15 @@ namespace DeliveryAPP.APP.Cadastros
         protected override void CarregaGrid()
         {
             cidades = _cidadeService.Get<Cidade>().ToList();
-            dataGridViewConsulta.DataSource = cidades;
-            dataGridViewConsulta.Columns["Nome"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.DataSource = cidades;
+            dataGridView1.Columns["Nome"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
         protected override void CarregaRegistro(DataGridViewRow? linha)
         {
             txtId.Text = linha?.Cells["Id"].Value.ToString();
-            txtNome.Text = linha?.Cells["Nome"].Value.ToString();
-            cboEstado.Text = linha?.Cells["Estado"].Value.ToString();
+            txtName.Text = linha?.Cells["Nome"].Value.ToString();
+            comboUF.Text = linha?.Cells["Estado"].Value.ToString();
         }
     }
 }

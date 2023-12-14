@@ -29,26 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroBase));
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             poisonTabControl1 = new ReaLTaiizor.Controls.PoisonTabControl();
             tabCadastro = new TabPage();
             panel1 = new Panel();
             btnCancel = new ReaLTaiizor.Controls.ParrotButton();
             btnSave = new ReaLTaiizor.Controls.ParrotButton();
             tabConsulta = new TabPage();
+            dataGridView1 = new DataGridView();
             panel2 = new Panel();
             btnNew = new ReaLTaiizor.Controls.ParrotButton();
             btnEdit = new ReaLTaiizor.Controls.ParrotButton();
             btnDel = new ReaLTaiizor.Controls.ParrotButton();
-            poisonDataGridView1 = new ReaLTaiizor.Controls.PoisonDataGridView();
             poisonTabControl1.SuspendLayout();
             tabCadastro.SuspendLayout();
             panel1.SuspendLayout();
             tabConsulta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)poisonDataGridView1).BeginInit();
             SuspendLayout();
             // 
             // poisonTabControl1
@@ -61,10 +58,11 @@
             poisonTabControl1.Name = "poisonTabControl1";
             poisonTabControl1.Padding = new Point(6, 8);
             poisonTabControl1.SelectedIndex = 0;
-            poisonTabControl1.Size = new Size(794, 383);
+            poisonTabControl1.Size = new Size(672, 327);
             poisonTabControl1.TabIndex = 0;
             poisonTabControl1.Theme = ReaLTaiizor.Enum.Poison.ThemeStyle.Light;
             poisonTabControl1.UseSelectable = true;
+            poisonTabControl1.Enter += tabPageConsulta_Enter;
             // 
             // tabCadastro
             // 
@@ -72,7 +70,7 @@
             tabCadastro.Location = new Point(4, 41);
             tabCadastro.Name = "tabCadastro";
             tabCadastro.Padding = new Padding(3);
-            tabCadastro.Size = new Size(786, 338);
+            tabCadastro.Size = new Size(664, 282);
             tabCadastro.TabIndex = 0;
             tabCadastro.Text = "Cadastro";
             tabCadastro.UseVisualStyleBackColor = true;
@@ -82,13 +80,14 @@
             panel1.Controls.Add(btnCancel);
             panel1.Controls.Add(btnSave);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(3, 252);
+            panel1.Location = new Point(3, 216);
             panel1.Name = "panel1";
-            panel1.Size = new Size(780, 83);
+            panel1.Size = new Size(658, 63);
             panel1.TabIndex = 0;
             // 
             // btnCancel
             // 
+            btnCancel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnCancel.BackgroundColor = Color.FromArgb(255, 255, 255);
             btnCancel.ButtonImage = (Image)resources.GetObject("btnCancel.ButtonImage");
             btnCancel.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
@@ -100,7 +99,7 @@
             btnCancel.HoverBackgroundColor = Color.FromArgb(225, 225, 225);
             btnCancel.HoverTextColor = Color.Black;
             btnCancel.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnCancel.Location = new Point(509, 21);
+            btnCancel.Location = new Point(387, 10);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(131, 50);
             btnCancel.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -112,6 +111,7 @@
             // 
             // btnSave
             // 
+            btnSave.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnSave.BackgroundColor = Color.FromArgb(255, 255, 255);
             btnSave.ButtonImage = (Image)resources.GetObject("btnSave.ButtonImage");
             btnSave.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
@@ -123,7 +123,7 @@
             btnSave.HoverBackgroundColor = Color.FromArgb(225, 225, 225);
             btnSave.HoverTextColor = Color.Black;
             btnSave.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnSave.Location = new Point(646, 21);
+            btnSave.Location = new Point(524, 10);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(131, 50);
             btnSave.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -135,24 +135,37 @@
             // 
             // tabConsulta
             // 
+            tabConsulta.Controls.Add(dataGridView1);
             tabConsulta.Controls.Add(panel2);
-            tabConsulta.Controls.Add(poisonDataGridView1);
-            tabConsulta.Location = new Point(4, 38);
+            tabConsulta.Location = new Point(4, 41);
             tabConsulta.Name = "tabConsulta";
             tabConsulta.Padding = new Padding(3);
-            tabConsulta.Size = new Size(786, 341);
+            tabConsulta.Size = new Size(664, 282);
             tabConsulta.TabIndex = 1;
             tabConsulta.Text = "Consulta";
             tabConsulta.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = SystemColors.Menu;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.GridColor = SystemColors.WindowText;
+            dataGridView1.Location = new Point(3, 3);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(658, 209);
+            dataGridView1.TabIndex = 2;
             // 
             // panel2
             // 
             panel2.Controls.Add(btnNew);
             panel2.Controls.Add(btnEdit);
             panel2.Controls.Add(btnDel);
-            panel2.Location = new Point(0, 282);
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(3, 212);
             panel2.Name = "panel2";
-            panel2.Size = new Size(792, 67);
+            panel2.Size = new Size(658, 67);
             panel2.TabIndex = 1;
             // 
             // btnNew
@@ -168,7 +181,7 @@
             btnNew.HoverBackgroundColor = Color.FromArgb(225, 225, 225);
             btnNew.HoverTextColor = Color.Black;
             btnNew.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnNew.Location = new Point(372, 7);
+            btnNew.Location = new Point(238, 7);
             btnNew.Name = "btnNew";
             btnNew.Size = new Size(134, 50);
             btnNew.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -180,6 +193,7 @@
             // 
             // btnEdit
             // 
+            btnEdit.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnEdit.BackgroundColor = Color.FromArgb(255, 255, 255);
             btnEdit.ButtonImage = (Image)resources.GetObject("btnEdit.ButtonImage");
             btnEdit.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
@@ -191,7 +205,7 @@
             btnEdit.HoverBackgroundColor = Color.FromArgb(225, 225, 225);
             btnEdit.HoverTextColor = Color.Black;
             btnEdit.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnEdit.Location = new Point(512, 6);
+            btnEdit.Location = new Point(378, 6);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(134, 50);
             btnEdit.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -214,7 +228,7 @@
             btnDel.HoverBackgroundColor = Color.FromArgb(225, 225, 225);
             btnDel.HoverTextColor = Color.Black;
             btnDel.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnDel.Location = new Point(649, 7);
+            btnDel.Location = new Point(515, 7);
             btnDel.Name = "btnDel";
             btnDel.Size = new Size(134, 50);
             btnDel.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -224,80 +238,37 @@
             btnDel.Vertical_Alignment = StringAlignment.Center;
             btnDel.Click += btnExcluir_Click;
             // 
-            // poisonDataGridView1
-            // 
-            poisonDataGridView1.AllowUserToResizeRows = false;
-            poisonDataGridView1.BackgroundColor = Color.FromArgb(255, 255, 255);
-            poisonDataGridView1.BorderStyle = BorderStyle.None;
-            poisonDataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            poisonDataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            poisonDataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = Color.FromArgb(136, 136, 136);
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            poisonDataGridView1.EnableHeadersVisualStyles = false;
-            poisonDataGridView1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            poisonDataGridView1.GridColor = Color.FromArgb(255, 255, 255);
-            poisonDataGridView1.Location = new Point(0, 0);
-            poisonDataGridView1.Name = "poisonDataGridView1";
-            poisonDataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            poisonDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            poisonDataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            poisonDataGridView1.RowTemplate.Height = 25;
-            poisonDataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            poisonDataGridView1.Size = new Size(792, 276);
-            poisonDataGridView1.TabIndex = 0;
-            // 
             // CadastroBase
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(678, 394);
             Controls.Add(poisonTabControl1);
             MaximumSize = new Size(1366, 720);
             Name = "CadastroBase";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CadastroBase";
             TransparencyKey = Color.DeepPink;
+            WindowState = FormWindowState.Maximized;
             poisonTabControl1.ResumeLayout(false);
             tabCadastro.ResumeLayout(false);
             panel1.ResumeLayout(false);
             tabConsulta.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)poisonDataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private TabPage tabConsulta;
         private Panel panel2;
+        protected ReaLTaiizor.Controls.ParrotButton btnDel;
         protected ReaLTaiizor.Controls.PoisonTabControl poisonTabControl1;
         protected TabPage tabCadastro;
-        protected Panel panel1;
+        private Panel panel1;
+        protected DataGridView dataGridView1;
         protected ReaLTaiizor.Controls.ParrotButton btnCancel;
         protected ReaLTaiizor.Controls.ParrotButton btnSave;
-        protected ReaLTaiizor.Controls.ParrotButton btnDel;
-        protected ReaLTaiizor.Controls.PoisonDataGridView poisonDataGridView1;
         protected ReaLTaiizor.Controls.ParrotButton btnEdit;
         protected ReaLTaiizor.Controls.ParrotButton btnNew;
     }

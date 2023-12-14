@@ -132,6 +132,7 @@ namespace DeliveryAPP.APP
             Name = "FormPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Delivery APP";
+            WindowState = FormWindowState.Maximized;
             formMenuStrip1.ResumeLayout(false);
             formMenuStrip1.PerformLayout();
             ResumeLayout(false);

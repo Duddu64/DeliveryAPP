@@ -20,7 +20,7 @@ namespace DeliveryAPP.Repository.Context
             ChangeTracker.LazyLoadingEnabled = false;
         }
 
-        public DbSet<Cliente>? Usuario { get; set; }
+        public DbSet<Restaurante>? Restaurante { get; set; }
         public DbSet<Cidade>? Cidade { get; set; }
         public DbSet<Cliente>? Cliente { get; set; }
         public DbSet<Categoria>? Grupo { get; set; }
@@ -34,7 +34,7 @@ namespace DeliveryAPP.Repository.Context
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Cliente>(new ClienteMap().Configure);
             modelBuilder.Entity<Cidade>(new CidadeMap().Configure);
-            modelBuilder.Entity<Cliente>(new ClienteMap().Configure);
+            modelBuilder.Entity<Restaurante>(new RestauranteMap().Configure);
             modelBuilder.Entity<Categoria>(new CategoriaMap().Configure);
             modelBuilder.Entity<Produto>(new ProdutoMap().Configure);
             modelBuilder.Entity<Pedido>(new PedidoMap().Configure);

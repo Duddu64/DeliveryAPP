@@ -21,7 +21,12 @@ namespace DeliveryAPP.Repository.Mapping
                 .IsRequired()
                 .HasColumnType("varchar(100)");
 
+
+            builder.Property(prop => prop.Foto)
+                .HasColumnType("varbinary(2147483647)");
+
             builder.HasOne(prop => prop.Categoria);
+            builder.HasOne(prop => prop.Restaurante);
             
         }
     }

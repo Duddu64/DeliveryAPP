@@ -53,20 +53,20 @@ namespace DeliveryAPP.APP.Base
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            if (poisonDataGridView1.SelectedRows.Count > 0)
+            if (dataGridView1.SelectedRows.Count > 0)
             {
                 if (MessageBox.Show(@"Deseja realmente deletar?", @"IFSP Store", MessageBoxButtons.YesNo,
                         MessageBoxIcon.Question)
                     == DialogResult.Yes)
                 {
-                    int id = (int)poisonDataGridView1.SelectedRows[0].Cells["Id"].Value;
+                    int id = (int)dataGridView1.SelectedRows[0].Cells["Id"].Value;
                     Deletar(id);
                     CarregaGrid();
                 }
             }
             else
             {
-                MessageBox.Show(@"Selecione algum registro!", @"IFSP Store", MessageBoxButtons.OK,
+                MessageBox.Show(@"Selecione algum registro!", @"Delivery APP", MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
             }
         }
@@ -119,10 +119,10 @@ namespace DeliveryAPP.APP.Base
 
         protected virtual void Editar()
         {
-            if (poisonDataGridView1.SelectedRows.Count > 0)
+            if (dataGridView1.SelectedRows.Count > 0)
             {
                 IsAlteracao = true;
-                var linha = poisonDataGridView1.SelectedRows[0];
+                var linha = dataGridView1.SelectedRows[0];
                 CarregaRegistro(linha);
                 poisonTabControl1.SelectedIndex = 0;
                 tabCadastro.Focus();

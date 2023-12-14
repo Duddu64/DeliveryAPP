@@ -12,6 +12,7 @@ namespace DeliveryAPP.APP.Model
         public string? Nome { get; set; }
         public int? IdCategoria { get; set; }
         public string? Categoria { get; set; }
+        public byte[]? Foto { get; set; }
         public int? IdRestaurante { get; set; }
         public string? Restaurante { get; set; }
 

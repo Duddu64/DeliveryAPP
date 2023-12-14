@@ -78,8 +78,8 @@ namespace DeliveryAPP.APP.Infra
                 config.CreateMap<Pedido, PedidoModel>()
                     .ForMember(d => d.IdCliente, d => d.MapFrom(x => x.Cliente!.Id))
                     .ForMember(d => d.Cliente, d => d.MapFrom(x => x.Cliente!.Nome))
-                    .ForMember(d => d.IdCliente, d => d.MapFrom(x => x.Cliente!.Id))
-                    .ForMember(d => d.Cliente, d => d.MapFrom(x => x.Cliente!.Nome));
+                    .ForMember(d => d.IdRestaurante, d => d.MapFrom(x => x.Restaurante!.Id))
+                    .ForMember(d => d.Restaurante, d => d.MapFrom(x => x.Restaurante!.Nome));
 
                 config.CreateMap<ItemPedido, ItemPedidoModel>()
                     .ForMember(d => d.IdProduto, d => d.MapFrom(x => x.Produto!.Id))

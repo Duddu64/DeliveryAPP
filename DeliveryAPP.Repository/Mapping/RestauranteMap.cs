@@ -21,12 +21,7 @@ namespace DeliveryAPP.Repository.Mapping
                 .IsRequired()
                 .HasColumnType("varchar(100)");
 
-            builder.Property(prop => prop.Cidade)
-                .IsRequired()
-                .HasColumnType("varchar(100)");
-
             builder.HasOne(prop => prop.Cidade);
-            builder.HasOne(prop => prop.Produto);
 
             builder.Property(prop => prop.Endereco)
                 .IsRequired()

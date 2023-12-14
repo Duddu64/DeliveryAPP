@@ -25,23 +25,25 @@ namespace DeliveryAPP.Domain.Entities
         public List<ItemPedido> Item { get; set; }
         public DateTime? Datacompra { get; set; }
         public double Valortotal { get; set; }
-        public Cliente? Cliente { get; set; }
-        public Restaurante? Restaurante { get; set; }
+        public virtual Cliente? Cliente { get; set; }
+        public virtual Restaurante? Restaurante { get; set; }
 
     }
     public class ItemPedido : BaseEntity<int>
     {
         public ItemPedido() { }
-        public ItemPedido(int Id, int quantidade, double valoruni, Produto? produto, double valortot) : base(Id)
+        public ItemPedido(int Id, int quantidade, double valoruni, Produto? produto, double valortot, Pedido? pedido) : base(Id)
         {
             Quantidade = quantidade;
             Valoruni = valoruni;
             Valortot = valortot;
             Produto = produto;
+            Pedido= pedido;
         }
         public int Quantidade { get; set; }
         public double Valoruni { get; set; }
-        public Produto? Produto { get; set; }
+        public virtual Produto? Produto { get; set; }
+        public virtual Pedido? Pedido { get; set; }
         public double Valortot { get; set; }
     }
 }

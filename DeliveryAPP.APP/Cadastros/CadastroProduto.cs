@@ -41,7 +41,7 @@ namespace DeliveryAPP.APP.Cadastros
             comboCategoria.DataSource = _categoriaService.Get<Categoria>().ToList();
             comboRestaurante.ValueMember = "Id";
             comboRestaurante.DisplayMember = "Nome";
-            comboRestaurante.DataSource = _categoriaService.Get<Restaurante>().ToList();
+            comboRestaurante.DataSource = _restauranteService.Get<Restaurante>().ToList();
         }
 
         private void PreencheObjeto(Produto produto)
@@ -104,12 +104,14 @@ namespace DeliveryAPP.APP.Cadastros
             }
         }
 
-        /*protected override void CarregaGrid()
+        protected override void CarregaGrid()
         {
-            produtos = _produtoService.Get<ProdutoModel>(new[] { "Produto" }).ToList();
+            produtos = _produtoService.Get<ProdutoModel>().ToList();
             dataGridView1.DataSource = produtos;
-            dataGridView1.Columns["IdProduto"]!.Visible = false;
-        }*/
+            //dataGridView1.Columns["Id"]!.Visible = false;
+
+            dataGridView1.Columns["Foto"]!.Visible= false;
+        }
 
         protected override void CarregaRegistro(DataGridViewRow? linha)
         {
@@ -144,6 +146,11 @@ namespace DeliveryAPP.APP.Cadastros
                     hopePictureBox1.Image = IMGSel;
                 }
             }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

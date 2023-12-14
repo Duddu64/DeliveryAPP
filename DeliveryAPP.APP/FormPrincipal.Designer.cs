@@ -32,111 +32,122 @@ namespace DeliveryAPP.APP
             ReaLTaiizor.ControlRenderer controlRenderer1 = new ReaLTaiizor.ControlRenderer();
             ReaLTaiizor.MSColorTable msColorTable1 = new ReaLTaiizor.MSColorTable();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
-            formMenuStrip1 = new ReaLTaiizor.Controls.FormMenuStrip();
-            cadastrosToolStripMenuItem = new ToolStripMenuItem();
-            cadastroDeCidadeToolStripMenuItem = new ToolStripMenuItem();
-            cadastroDeClienteToolStripMenuItem = new ToolStripMenuItem();
-            cadastroDePedidoToolStripMenuItem = new ToolStripMenuItem();
-            cadastroDeProdutoToolStripMenuItem = new ToolStripMenuItem();
-            cadastroDeRestauranteToolStripMenuItem = new ToolStripMenuItem();
-            cadastroDeCategoriaToolStripMenuItem = new ToolStripMenuItem();
-            sairToolStripMenuItem = new ToolStripMenuItem();
-            formMenuStrip1.SuspendLayout();
-            SuspendLayout();
+            this.formMenuStrip1 = new ReaLTaiizor.Controls.FormMenuStrip();
+            this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeCidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDePedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeRestauranteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formMenuStrip1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // formMenuStrip1
             // 
-            formMenuStrip1.Items.AddRange(new ToolStripItem[] { cadastrosToolStripMenuItem, sairToolStripMenuItem });
-            formMenuStrip1.Location = new Point(3, 64);
-            formMenuStrip1.Name = "formMenuStrip1";
+            this.formMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrosToolStripMenuItem,
+            this.sairToolStripMenuItem});
+            this.formMenuStrip1.Location = new System.Drawing.Point(3, 64);
+            this.formMenuStrip1.Name = "formMenuStrip1";
             controlRenderer1.ColorTable = msColorTable1;
             controlRenderer1.RoundedEdges = true;
-            formMenuStrip1.Renderer = controlRenderer1;
-            formMenuStrip1.Size = new Size(593, 24);
-            formMenuStrip1.TabIndex = 0;
-            formMenuStrip1.Text = "formMenuStrip1";
+            this.formMenuStrip1.Renderer = controlRenderer1;
+            this.formMenuStrip1.Size = new System.Drawing.Size(593, 24);
+            this.formMenuStrip1.TabIndex = 0;
+            this.formMenuStrip1.Text = "formMenuStrip1";
             // 
             // cadastrosToolStripMenuItem
             // 
-            cadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cadastroDeCidadeToolStripMenuItem, cadastroDeClienteToolStripMenuItem, cadastroDePedidoToolStripMenuItem, cadastroDeProdutoToolStripMenuItem, cadastroDeRestauranteToolStripMenuItem, cadastroDeCategoriaToolStripMenuItem });
-            cadastrosToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
-            cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
-            cadastrosToolStripMenuItem.Size = new Size(71, 20);
-            cadastrosToolStripMenuItem.Text = "Cadastros";
+            this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastroDeCidadeToolStripMenuItem,
+            this.cadastroDeClienteToolStripMenuItem,
+            this.cadastroDePedidoToolStripMenuItem,
+            this.cadastroDeProdutoToolStripMenuItem,
+            this.cadastroDeRestauranteToolStripMenuItem,
+            this.cadastroDeCategoriaToolStripMenuItem});
+            this.cadastrosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.cadastrosToolStripMenuItem.Text = "Cadastros";
             // 
             // cadastroDeCidadeToolStripMenuItem
             // 
-            cadastroDeCidadeToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
-            cadastroDeCidadeToolStripMenuItem.Name = "cadastroDeCidadeToolStripMenuItem";
-            cadastroDeCidadeToolStripMenuItem.Size = new Size(202, 22);
-            cadastroDeCidadeToolStripMenuItem.Text = "Cadastro de Cidade";
-            cadastroDeCidadeToolStripMenuItem.Click += cadastroDeCidadeToolStripMenuItem_Click;
+            this.cadastroDeCidadeToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.cadastroDeCidadeToolStripMenuItem.Name = "cadastroDeCidadeToolStripMenuItem";
+            this.cadastroDeCidadeToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.cadastroDeCidadeToolStripMenuItem.Text = "Cadastro de Cidade";
+            this.cadastroDeCidadeToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeCidadeToolStripMenuItem_Click);
             // 
             // cadastroDeClienteToolStripMenuItem
             // 
-            cadastroDeClienteToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
-            cadastroDeClienteToolStripMenuItem.Name = "cadastroDeClienteToolStripMenuItem";
-            cadastroDeClienteToolStripMenuItem.Size = new Size(202, 22);
-            cadastroDeClienteToolStripMenuItem.Text = "Cadastro de Cliente";
-            cadastroDeClienteToolStripMenuItem.Click += cadastroDeClienteToolStripMenuItem_Click;
+            this.cadastroDeClienteToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.cadastroDeClienteToolStripMenuItem.Name = "cadastroDeClienteToolStripMenuItem";
+            this.cadastroDeClienteToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.cadastroDeClienteToolStripMenuItem.Text = "Cadastro de Cliente";
+            this.cadastroDeClienteToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeClienteToolStripMenuItem_Click);
             // 
             // cadastroDePedidoToolStripMenuItem
             // 
-            cadastroDePedidoToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
-            cadastroDePedidoToolStripMenuItem.Name = "cadastroDePedidoToolStripMenuItem";
-            cadastroDePedidoToolStripMenuItem.Size = new Size(202, 22);
-            cadastroDePedidoToolStripMenuItem.Text = "Cadastro de Pedido";
-            cadastroDePedidoToolStripMenuItem.Click += cadastroDePedidoToolStripMenuItem_Click;
+            this.cadastroDePedidoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.cadastroDePedidoToolStripMenuItem.Name = "cadastroDePedidoToolStripMenuItem";
+            this.cadastroDePedidoToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.cadastroDePedidoToolStripMenuItem.Text = "Cadastro de Pedido";
+            this.cadastroDePedidoToolStripMenuItem.Click += new System.EventHandler(this.cadastroDePedidoToolStripMenuItem_Click);
             // 
             // cadastroDeProdutoToolStripMenuItem
             // 
-            cadastroDeProdutoToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
-            cadastroDeProdutoToolStripMenuItem.Name = "cadastroDeProdutoToolStripMenuItem";
-            cadastroDeProdutoToolStripMenuItem.Size = new Size(202, 22);
-            cadastroDeProdutoToolStripMenuItem.Text = "Cadastro de Produto";
-            cadastroDeProdutoToolStripMenuItem.Click += cadastroDeProdutoToolStripMenuItem_Click;
+            this.cadastroDeProdutoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.cadastroDeProdutoToolStripMenuItem.Name = "cadastroDeProdutoToolStripMenuItem";
+            this.cadastroDeProdutoToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.cadastroDeProdutoToolStripMenuItem.Text = "Cadastro de Produto";
+            this.cadastroDeProdutoToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeProdutoToolStripMenuItem_Click);
             // 
             // cadastroDeRestauranteToolStripMenuItem
             // 
-            cadastroDeRestauranteToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
-            cadastroDeRestauranteToolStripMenuItem.Name = "cadastroDeRestauranteToolStripMenuItem";
-            cadastroDeRestauranteToolStripMenuItem.Size = new Size(202, 22);
-            cadastroDeRestauranteToolStripMenuItem.Text = "Cadastro de Restaurante";
-            cadastroDeRestauranteToolStripMenuItem.Click += cadastroDeRestauranteToolStripMenuItem_Click;
+            this.cadastroDeRestauranteToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.cadastroDeRestauranteToolStripMenuItem.Name = "cadastroDeRestauranteToolStripMenuItem";
+            this.cadastroDeRestauranteToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.cadastroDeRestauranteToolStripMenuItem.Text = "Cadastro de Restaurante";
+            this.cadastroDeRestauranteToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeRestauranteToolStripMenuItem_Click);
             // 
             // cadastroDeCategoriaToolStripMenuItem
             // 
-            cadastroDeCategoriaToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
-            cadastroDeCategoriaToolStripMenuItem.Name = "cadastroDeCategoriaToolStripMenuItem";
-            cadastroDeCategoriaToolStripMenuItem.Size = new Size(202, 22);
-            cadastroDeCategoriaToolStripMenuItem.Text = "Cadastro de Categoria";
-            cadastroDeCategoriaToolStripMenuItem.Click += cadastroDeCategoriaToolStripMenuItem_Click;
+            this.cadastroDeCategoriaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.cadastroDeCategoriaToolStripMenuItem.Name = "cadastroDeCategoriaToolStripMenuItem";
+            this.cadastroDeCategoriaToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.cadastroDeCategoriaToolStripMenuItem.Text = "Cadastro de Categoria";
+            this.cadastroDeCategoriaToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeCategoriaToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
-            sairToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
-            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            sairToolStripMenuItem.Size = new Size(38, 20);
-            sairToolStripMenuItem.Text = "Sair";
-            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
+            this.sairToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(599, 460);
-            Controls.Add(formMenuStrip1);
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            IsMdiContainer = true;
-            MainMenuStrip = formMenuStrip1;
-            Name = "FormPrincipal";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Delivery APP";
-            WindowState = FormWindowState.Maximized;
-            formMenuStrip1.ResumeLayout(false);
-            formMenuStrip1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(599, 460);
+            this.Controls.Add(this.formMenuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.formMenuStrip1;
+            this.Name = "FormPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Delivery APP";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.formMenuStrip1.ResumeLayout(false);
+            this.formMenuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

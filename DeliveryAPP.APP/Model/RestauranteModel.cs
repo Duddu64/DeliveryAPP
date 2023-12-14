@@ -13,7 +13,6 @@ namespace DeliveryAPP.APP.Model
         public string? Endereco { get; set; }
         public int IdCidade { get; set; }
         public string? Cidade { get; set; }
-        public int IdProduto { get; set; }
-        public string? Produto { get; set; }
+        
     }
 }

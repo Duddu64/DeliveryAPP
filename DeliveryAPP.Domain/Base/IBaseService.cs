@@ -16,7 +16,6 @@ namespace DeliveryAPP.Domain.Base
             where TOutputModel : class;
 
         void Delete(int id);
-
         IEnumerable<TOutputModel> Get<TOutputModel>(IList<string>? includes = null) where TOutputModel : class;
 
         TOutputModel GetById<TOutputModel>(int id, IList<string>? includes = null) where TOutputModel : class;

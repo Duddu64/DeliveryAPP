@@ -41,7 +41,11 @@ namespace DeliveryAPP.Service.Services
             return outputModel;
         }
 
-        public void Delete(int id) => _baseRepository.Delete(id);
+        public void Delete(int id)
+        {
+            _baseRepository.ClearChangeTracker();
+            _baseRepository.Delete(id);
+        }
 
         public IEnumerable<TOutputModel> Get<TOutputModel>(IList<string>? includes = null) where TOutputModel : class
         {

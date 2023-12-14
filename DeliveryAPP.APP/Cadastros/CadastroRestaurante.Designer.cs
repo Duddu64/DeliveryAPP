@@ -28,218 +28,197 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtName = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            txtId = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            txtEmail = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            txtAdress = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            comboCidade = new ReaLTaiizor.Controls.MaterialComboBox();
-            poisonTabControl1.SuspendLayout();
-            tabCadastro.SuspendLayout();
-            SuspendLayout();
-            // 
-            // btnDel
-            // 
-            btnDel.Anchor = AnchorStyles.None;
-            btnDel.Location = new Point(1314, 7);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroRestaurante));
+            this.txtName = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            this.txtId = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            this.txtEmail = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            this.txtAdress = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            this.comboCidade = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.poisonTabControl1.SuspendLayout();
+            this.tabCadastro.SuspendLayout();
+            this.SuspendLayout();
             // 
             // poisonTabControl1
             // 
-            poisonTabControl1.Size = new Size(794, 333);
+            this.poisonTabControl1.Size = new System.Drawing.Size(813, 343);
             // 
             // tabCadastro
             // 
-            tabCadastro.Controls.Add(comboCidade);
-            tabCadastro.Controls.Add(txtAdress);
-            tabCadastro.Controls.Add(txtEmail);
-            tabCadastro.Controls.Add(txtId);
-            tabCadastro.Controls.Add(txtName);
-            tabCadastro.Location = new Point(4, 41);
-            tabCadastro.Size = new Size(786, 288);
-            tabCadastro.Controls.SetChildIndex(txtName, 0);
-            tabCadastro.Controls.SetChildIndex(txtId, 0);
-            tabCadastro.Controls.SetChildIndex(txtEmail, 0);
-            tabCadastro.Controls.SetChildIndex(txtAdress, 0);
-            tabCadastro.Controls.SetChildIndex(comboCidade, 0);
-            // 
-            // btnCancel
-            // 
-            btnCancel.Anchor = AnchorStyles.None;
-            btnCancel.Location = new Point(1180, 10);
-            // 
-            // btnSave
-            // 
-            btnSave.Anchor = AnchorStyles.None;
-            btnSave.Location = new Point(1317, 10);
-            // 
-            // btnEdit
-            // 
-            btnEdit.Anchor = AnchorStyles.None;
-            btnEdit.Location = new Point(1174, 7);
-            // 
-            // btnNew
-            // 
-            btnNew.Anchor = AnchorStyles.None;
-            btnNew.Location = new Point(1034, 7);
+            this.tabCadastro.Controls.Add(this.comboCidade);
+            this.tabCadastro.Controls.Add(this.txtAdress);
+            this.tabCadastro.Controls.Add(this.txtEmail);
+            this.tabCadastro.Controls.Add(this.txtId);
+            this.tabCadastro.Controls.Add(this.txtName);
+            this.tabCadastro.Location = new System.Drawing.Point(4, 41);
+            this.tabCadastro.Size = new System.Drawing.Size(805, 298);
+            this.tabCadastro.Controls.SetChildIndex(this.txtName, 0);
+            this.tabCadastro.Controls.SetChildIndex(this.txtId, 0);
+            this.tabCadastro.Controls.SetChildIndex(this.txtEmail, 0);
+            this.tabCadastro.Controls.SetChildIndex(this.txtAdress, 0);
+            this.tabCadastro.Controls.SetChildIndex(this.comboCidade, 0);
             // 
             // txtName
             // 
-            txtName.AnimateReadOnly = false;
-            txtName.AutoCompleteMode = AutoCompleteMode.None;
-            txtName.AutoCompleteSource = AutoCompleteSource.None;
-            txtName.BackgroundImageLayout = ImageLayout.None;
-            txtName.CharacterCasing = CharacterCasing.Normal;
-            txtName.Depth = 0;
-            txtName.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtName.HideSelection = true;
-            txtName.Hint = "Nome";
-            txtName.LeadingIcon = null;
-            txtName.Location = new Point(6, 6);
-            txtName.MaxLength = 32767;
-            txtName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtName.Name = "txtName";
-            txtName.PasswordChar = '\0';
-            txtName.PrefixSuffixText = null;
-            txtName.ReadOnly = false;
-            txtName.RightToLeft = RightToLeft.No;
-            txtName.SelectedText = "";
-            txtName.SelectionLength = 0;
-            txtName.SelectionStart = 0;
-            txtName.ShortcutsEnabled = true;
-            txtName.Size = new Size(637, 48);
-            txtName.TabIndex = 1;
-            txtName.TabStop = false;
-            txtName.TextAlign = HorizontalAlignment.Left;
-            txtName.TrailingIcon = null;
-            txtName.UseSystemPasswordChar = false;
+            this.txtName.AnimateReadOnly = false;
+            this.txtName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtName.Depth = 0;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtName.HideSelection = true;
+            this.txtName.Hint = "Nome";
+            this.txtName.LeadingIcon = null;
+            this.txtName.Location = new System.Drawing.Point(6, 6);
+            this.txtName.MaxLength = 32767;
+            this.txtName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.txtName.Name = "txtName";
+            this.txtName.PasswordChar = '\0';
+            this.txtName.PrefixSuffixText = null;
+            this.txtName.ReadOnly = false;
+            this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtName.SelectedText = "";
+            this.txtName.SelectionLength = 0;
+            this.txtName.SelectionStart = 0;
+            this.txtName.ShortcutsEnabled = true;
+            this.txtName.Size = new System.Drawing.Size(637, 48);
+            this.txtName.TabIndex = 1;
+            this.txtName.TabStop = false;
+            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtName.TrailingIcon = null;
+            this.txtName.UseSystemPasswordChar = false;
             // 
             // txtId
             // 
-            txtId.AnimateReadOnly = false;
-            txtId.AutoCompleteMode = AutoCompleteMode.None;
-            txtId.AutoCompleteSource = AutoCompleteSource.None;
-            txtId.BackgroundImageLayout = ImageLayout.None;
-            txtId.CharacterCasing = CharacterCasing.Normal;
-            txtId.Depth = 0;
-            txtId.Enabled = false;
-            txtId.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtId.HideSelection = true;
-            txtId.Hint = "Id";
-            txtId.LeadingIcon = null;
-            txtId.Location = new Point(649, 6);
-            txtId.MaxLength = 32767;
-            txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtId.Name = "txtId";
-            txtId.PasswordChar = '\0';
-            txtId.PrefixSuffixText = null;
-            txtId.ReadOnly = false;
-            txtId.RightToLeft = RightToLeft.No;
-            txtId.SelectedText = "";
-            txtId.SelectionLength = 0;
-            txtId.SelectionStart = 0;
-            txtId.ShortcutsEnabled = true;
-            txtId.Size = new Size(131, 48);
-            txtId.TabIndex = 2;
-            txtId.TabStop = false;
-            txtId.TextAlign = HorizontalAlignment.Left;
-            txtId.TrailingIcon = null;
-            txtId.UseSystemPasswordChar = false;
+            this.txtId.AnimateReadOnly = false;
+            this.txtId.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtId.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtId.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtId.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtId.Depth = 0;
+            this.txtId.Enabled = false;
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtId.HideSelection = true;
+            this.txtId.Hint = "Id";
+            this.txtId.LeadingIcon = null;
+            this.txtId.Location = new System.Drawing.Point(649, 6);
+            this.txtId.MaxLength = 32767;
+            this.txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.txtId.Name = "txtId";
+            this.txtId.PasswordChar = '\0';
+            this.txtId.PrefixSuffixText = null;
+            this.txtId.ReadOnly = false;
+            this.txtId.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtId.SelectedText = "";
+            this.txtId.SelectionLength = 0;
+            this.txtId.SelectionStart = 0;
+            this.txtId.ShortcutsEnabled = true;
+            this.txtId.Size = new System.Drawing.Size(131, 48);
+            this.txtId.TabIndex = 2;
+            this.txtId.TabStop = false;
+            this.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtId.TrailingIcon = null;
+            this.txtId.UseSystemPasswordChar = false;
             // 
             // txtEmail
             // 
-            txtEmail.AnimateReadOnly = false;
-            txtEmail.AutoCompleteMode = AutoCompleteMode.None;
-            txtEmail.AutoCompleteSource = AutoCompleteSource.None;
-            txtEmail.BackgroundImageLayout = ImageLayout.None;
-            txtEmail.CharacterCasing = CharacterCasing.Normal;
-            txtEmail.Depth = 0;
-            txtEmail.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtEmail.HideSelection = true;
-            txtEmail.Hint = "Email";
-            txtEmail.LeadingIcon = null;
-            txtEmail.Location = new Point(6, 60);
-            txtEmail.MaxLength = 32767;
-            txtEmail.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtEmail.Name = "txtEmail";
-            txtEmail.PasswordChar = '\0';
-            txtEmail.PrefixSuffixText = null;
-            txtEmail.ReadOnly = false;
-            txtEmail.RightToLeft = RightToLeft.No;
-            txtEmail.SelectedText = "";
-            txtEmail.SelectionLength = 0;
-            txtEmail.SelectionStart = 0;
-            txtEmail.ShortcutsEnabled = true;
-            txtEmail.Size = new Size(774, 48);
-            txtEmail.TabIndex = 3;
-            txtEmail.TabStop = false;
-            txtEmail.TextAlign = HorizontalAlignment.Left;
-            txtEmail.TrailingIcon = null;
-            txtEmail.UseSystemPasswordChar = false;
+            this.txtEmail.AnimateReadOnly = false;
+            this.txtEmail.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtEmail.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtEmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtEmail.Depth = 0;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEmail.HideSelection = true;
+            this.txtEmail.Hint = "Email";
+            this.txtEmail.LeadingIcon = null;
+            this.txtEmail.Location = new System.Drawing.Point(6, 60);
+            this.txtEmail.MaxLength = 32767;
+            this.txtEmail.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PasswordChar = '\0';
+            this.txtEmail.PrefixSuffixText = null;
+            this.txtEmail.ReadOnly = false;
+            this.txtEmail.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtEmail.SelectedText = "";
+            this.txtEmail.SelectionLength = 0;
+            this.txtEmail.SelectionStart = 0;
+            this.txtEmail.ShortcutsEnabled = true;
+            this.txtEmail.Size = new System.Drawing.Size(774, 48);
+            this.txtEmail.TabIndex = 3;
+            this.txtEmail.TabStop = false;
+            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtEmail.TrailingIcon = null;
+            this.txtEmail.UseSystemPasswordChar = false;
             // 
             // txtAdress
             // 
-            txtAdress.AnimateReadOnly = false;
-            txtAdress.AutoCompleteMode = AutoCompleteMode.None;
-            txtAdress.AutoCompleteSource = AutoCompleteSource.None;
-            txtAdress.BackgroundImageLayout = ImageLayout.None;
-            txtAdress.CharacterCasing = CharacterCasing.Normal;
-            txtAdress.Depth = 0;
-            txtAdress.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtAdress.HideSelection = true;
-            txtAdress.Hint = "Endereço";
-            txtAdress.LeadingIcon = null;
-            txtAdress.Location = new Point(6, 114);
-            txtAdress.MaxLength = 32767;
-            txtAdress.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtAdress.Name = "txtAdress";
-            txtAdress.PasswordChar = '\0';
-            txtAdress.PrefixSuffixText = null;
-            txtAdress.ReadOnly = false;
-            txtAdress.RightToLeft = RightToLeft.No;
-            txtAdress.SelectedText = "";
-            txtAdress.SelectionLength = 0;
-            txtAdress.SelectionStart = 0;
-            txtAdress.ShortcutsEnabled = true;
-            txtAdress.Size = new Size(774, 48);
-            txtAdress.TabIndex = 4;
-            txtAdress.TabStop = false;
-            txtAdress.TextAlign = HorizontalAlignment.Left;
-            txtAdress.TrailingIcon = null;
-            txtAdress.UseSystemPasswordChar = false;
+            this.txtAdress.AnimateReadOnly = false;
+            this.txtAdress.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtAdress.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtAdress.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtAdress.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtAdress.Depth = 0;
+            this.txtAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAdress.HideSelection = true;
+            this.txtAdress.Hint = "Endereço";
+            this.txtAdress.LeadingIcon = null;
+            this.txtAdress.Location = new System.Drawing.Point(6, 114);
+            this.txtAdress.MaxLength = 32767;
+            this.txtAdress.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.txtAdress.Name = "txtAdress";
+            this.txtAdress.PasswordChar = '\0';
+            this.txtAdress.PrefixSuffixText = null;
+            this.txtAdress.ReadOnly = false;
+            this.txtAdress.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtAdress.SelectedText = "";
+            this.txtAdress.SelectionLength = 0;
+            this.txtAdress.SelectionStart = 0;
+            this.txtAdress.ShortcutsEnabled = true;
+            this.txtAdress.Size = new System.Drawing.Size(774, 48);
+            this.txtAdress.TabIndex = 4;
+            this.txtAdress.TabStop = false;
+            this.txtAdress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAdress.TrailingIcon = null;
+            this.txtAdress.UseSystemPasswordChar = false;
             // 
             // comboCidade
             // 
-            comboCidade.AutoResize = false;
-            comboCidade.BackColor = Color.FromArgb(255, 255, 255);
-            comboCidade.Depth = 0;
-            comboCidade.DrawMode = DrawMode.OwnerDrawVariable;
-            comboCidade.DropDownHeight = 174;
-            comboCidade.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboCidade.DropDownWidth = 121;
-            comboCidade.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
-            comboCidade.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            comboCidade.FormattingEnabled = true;
-            comboCidade.Hint = "Cidade";
-            comboCidade.IntegralHeight = false;
-            comboCidade.ItemHeight = 43;
-            comboCidade.Location = new Point(6, 168);
-            comboCidade.MaxDropDownItems = 4;
-            comboCidade.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            comboCidade.Name = "comboCidade";
-            comboCidade.Size = new Size(774, 49);
-            comboCidade.StartIndex = 0;
-            comboCidade.TabIndex = 5;
+            this.comboCidade.AutoResize = false;
+            this.comboCidade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.comboCidade.Depth = 0;
+            this.comboCidade.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboCidade.DropDownHeight = 174;
+            this.comboCidade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboCidade.DropDownWidth = 121;
+            this.comboCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.comboCidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.comboCidade.FormattingEnabled = true;
+            this.comboCidade.Hint = "Cidade";
+            this.comboCidade.IntegralHeight = false;
+            this.comboCidade.ItemHeight = 43;
+            this.comboCidade.Location = new System.Drawing.Point(6, 168);
+            this.comboCidade.MaxDropDownItems = 4;
+            this.comboCidade.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.comboCidade.Name = "comboCidade";
+            this.comboCidade.Size = new System.Drawing.Size(774, 49);
+            this.comboCidade.StartIndex = 0;
+            this.comboCidade.TabIndex = 5;
             // 
             // CadastroRestaurante
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 400);
-            Name = "CadastroRestaurante";
-            Text = "CadastroRestaurante";
-            TransparencyKey = Color.Empty;
-            poisonTabControl1.ResumeLayout(false);
-            tabCadastro.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(819, 410);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "CadastroRestaurante";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Restaurante";
+            this.TransparencyKey = System.Drawing.Color.Empty;
+            this.poisonTabControl1.ResumeLayout(false);
+            this.tabCadastro.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

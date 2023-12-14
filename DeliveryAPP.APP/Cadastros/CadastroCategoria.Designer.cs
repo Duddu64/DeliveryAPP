@@ -28,126 +28,102 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtName = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            txtId = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            poisonTabControl1.SuspendLayout();
-            tabCadastro.SuspendLayout();
-            SuspendLayout();
-            // 
-            // btnDel
-            // 
-            btnDel.Location = new Point(359, 13);
-            btnDel.Size = new Size(98, 51);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroCategoria));
+            this.txtName = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            this.txtId = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            this.poisonTabControl1.SuspendLayout();
+            this.tabCadastro.SuspendLayout();
+            this.SuspendLayout();
             // 
             // poisonTabControl1
             // 
-            poisonTabControl1.Size = new Size(474, 212);
+            this.poisonTabControl1.Size = new System.Drawing.Size(474, 212);
             // 
             // tabCadastro
             // 
-            tabCadastro.Controls.Add(txtId);
-            tabCadastro.Controls.Add(txtName);
-            tabCadastro.Location = new Point(4, 41);
-            tabCadastro.Size = new Size(466, 167);
-            tabCadastro.Controls.SetChildIndex(txtName, 0);
-            tabCadastro.Controls.SetChildIndex(txtId, 0);
-            // 
-            // btnCancel
-            // 
-            btnCancel.Anchor = AnchorStyles.None;
-            btnCancel.Location = new Point(217, 9);
-            btnCancel.Size = new Size(125, 51);
-            // 
-            // btnSave
-            // 
-            btnSave.Anchor = AnchorStyles.None;
-            btnSave.Location = new Point(348, 9);
-            btnSave.Size = new Size(106, 51);
-            // 
-            // btnEdit
-            // 
-            btnEdit.Location = new Point(158, 13);
-            btnEdit.Size = new Size(93, 51);
-            // 
-            // btnNew
-            // 
-            btnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnNew.Location = new Point(257, 13);
-            btnNew.Size = new Size(96, 51);
+            this.tabCadastro.Controls.Add(this.txtId);
+            this.tabCadastro.Controls.Add(this.txtName);
+            this.tabCadastro.Location = new System.Drawing.Point(4, 41);
+            this.tabCadastro.Size = new System.Drawing.Size(466, 167);
+            this.tabCadastro.Controls.SetChildIndex(this.txtName, 0);
+            this.tabCadastro.Controls.SetChildIndex(this.txtId, 0);
             // 
             // txtName
             // 
-            txtName.AnimateReadOnly = false;
-            txtName.AutoCompleteMode = AutoCompleteMode.None;
-            txtName.AutoCompleteSource = AutoCompleteSource.None;
-            txtName.BackgroundImageLayout = ImageLayout.None;
-            txtName.CharacterCasing = CharacterCasing.Normal;
-            txtName.Depth = 0;
-            txtName.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtName.HideSelection = true;
-            txtName.Hint = "Nome";
-            txtName.LeadingIcon = null;
-            txtName.Location = new Point(6, 6);
-            txtName.MaxLength = 32767;
-            txtName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtName.Name = "txtName";
-            txtName.PasswordChar = '\0';
-            txtName.PrefixSuffixText = null;
-            txtName.ReadOnly = false;
-            txtName.RightToLeft = RightToLeft.No;
-            txtName.SelectedText = "";
-            txtName.SelectionLength = 0;
-            txtName.SelectionStart = 0;
-            txtName.ShortcutsEnabled = true;
-            txtName.Size = new Size(339, 48);
-            txtName.TabIndex = 1;
-            txtName.TabStop = false;
-            txtName.TextAlign = HorizontalAlignment.Left;
-            txtName.TrailingIcon = null;
-            txtName.UseSystemPasswordChar = false;
+            this.txtName.AnimateReadOnly = false;
+            this.txtName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtName.Depth = 0;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtName.HideSelection = true;
+            this.txtName.Hint = "Nome";
+            this.txtName.LeadingIcon = null;
+            this.txtName.Location = new System.Drawing.Point(6, 6);
+            this.txtName.MaxLength = 32767;
+            this.txtName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.txtName.Name = "txtName";
+            this.txtName.PasswordChar = '\0';
+            this.txtName.PrefixSuffixText = null;
+            this.txtName.ReadOnly = false;
+            this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtName.SelectedText = "";
+            this.txtName.SelectionLength = 0;
+            this.txtName.SelectionStart = 0;
+            this.txtName.ShortcutsEnabled = true;
+            this.txtName.Size = new System.Drawing.Size(339, 48);
+            this.txtName.TabIndex = 1;
+            this.txtName.TabStop = false;
+            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtName.TrailingIcon = null;
+            this.txtName.UseSystemPasswordChar = false;
             // 
             // txtId
             // 
-            txtId.AnimateReadOnly = false;
-            txtId.AutoCompleteMode = AutoCompleteMode.None;
-            txtId.AutoCompleteSource = AutoCompleteSource.None;
-            txtId.BackgroundImageLayout = ImageLayout.None;
-            txtId.CharacterCasing = CharacterCasing.Normal;
-            txtId.Depth = 0;
-            txtId.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtId.HideSelection = true;
-            txtId.Hint = "Id";
-            txtId.LeadingIcon = null;
-            txtId.Location = new Point(351, 6);
-            txtId.MaxLength = 32767;
-            txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtId.Name = "txtId";
-            txtId.PasswordChar = '\0';
-            txtId.PrefixSuffixText = null;
-            txtId.ReadOnly = false;
-            txtId.RightToLeft = RightToLeft.No;
-            txtId.SelectedText = "";
-            txtId.SelectionLength = 0;
-            txtId.SelectionStart = 0;
-            txtId.ShortcutsEnabled = true;
-            txtId.Size = new Size(94, 48);
-            txtId.TabIndex = 2;
-            txtId.TabStop = false;
-            txtId.TextAlign = HorizontalAlignment.Left;
-            txtId.TrailingIcon = null;
-            txtId.UseSystemPasswordChar = false;
+            this.txtId.AnimateReadOnly = false;
+            this.txtId.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtId.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtId.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtId.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtId.Depth = 0;
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtId.HideSelection = true;
+            this.txtId.Hint = "Id";
+            this.txtId.LeadingIcon = null;
+            this.txtId.Location = new System.Drawing.Point(351, 6);
+            this.txtId.MaxLength = 32767;
+            this.txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.txtId.Name = "txtId";
+            this.txtId.PasswordChar = '\0';
+            this.txtId.PrefixSuffixText = null;
+            this.txtId.ReadOnly = false;
+            this.txtId.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtId.SelectedText = "";
+            this.txtId.SelectionLength = 0;
+            this.txtId.SelectionStart = 0;
+            this.txtId.ShortcutsEnabled = true;
+            this.txtId.Size = new System.Drawing.Size(94, 48);
+            this.txtId.TabIndex = 2;
+            this.txtId.TabStop = false;
+            this.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtId.TrailingIcon = null;
+            this.txtId.UseSystemPasswordChar = false;
             // 
             // CadastroCategoria
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(480, 279);
-            Name = "CadastroCategoria";
-            Text = "Categoria";
-            TransparencyKey = Color.Empty;
-            poisonTabControl1.ResumeLayout(false);
-            tabCadastro.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(480, 279);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "CadastroCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Categoria";
+            this.TransparencyKey = System.Drawing.Color.Empty;
+            this.poisonTabControl1.ResumeLayout(false);
+            this.tabCadastro.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

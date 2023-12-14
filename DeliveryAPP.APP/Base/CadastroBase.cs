@@ -39,6 +39,7 @@ namespace DeliveryAPP.APP.Base
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             Salvar();
+            CarregaGrid();
         }
 
         private void btnNovo_Click(object sender, EventArgs e)

@@ -35,7 +35,7 @@ namespace DeliveryAPP.APP.Cadastros
         private void CarregarCombo()
         {
             comboCidade.ValueMember = "Id";
-            comboCidade.DisplayMember = "NomeEstado";
+            comboCidade.DisplayMember = "Nome";
             comboCidade.DataSource = _cidadeService.Get<CidadeModel>().ToList();
         }
 

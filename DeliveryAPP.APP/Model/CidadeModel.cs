@@ -8,7 +8,7 @@ namespace DeliveryAPP.APP.Model
 {
     public class CidadeModel
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string? Nome { get; set; }
         public string? Estado { get; set; }
     }

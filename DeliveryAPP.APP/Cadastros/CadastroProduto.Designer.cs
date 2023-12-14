@@ -29,180 +29,175 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroProduto));
-            txtName = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            txtId = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            comboRestaurante = new ReaLTaiizor.Controls.MaterialComboBox();
-            comboCategoria = new ReaLTaiizor.Controls.MaterialComboBox();
-            hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
-            poisonTabControl1.SuspendLayout();
-            tabCadastro.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)hopePictureBox1).BeginInit();
-            SuspendLayout();
+            this.txtName = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            this.txtId = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            this.comboRestaurante = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.comboCategoria = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
+            this.poisonTabControl1.SuspendLayout();
+            this.tabCadastro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // poisonTabControl1
             // 
-            poisonTabControl1.Size = new Size(812, 457);
+            this.poisonTabControl1.Size = new System.Drawing.Size(812, 457);
             // 
             // tabCadastro
             // 
-            tabCadastro.Controls.Add(hopePictureBox1);
-            tabCadastro.Controls.Add(comboCategoria);
-            tabCadastro.Controls.Add(comboRestaurante);
-            tabCadastro.Controls.Add(txtId);
-            tabCadastro.Controls.Add(txtName);
-            tabCadastro.Location = new Point(4, 41);
-            tabCadastro.Size = new Size(804, 412);
-            tabCadastro.Controls.SetChildIndex(txtName, 0);
-            tabCadastro.Controls.SetChildIndex(txtId, 0);
-            tabCadastro.Controls.SetChildIndex(comboRestaurante, 0);
-            tabCadastro.Controls.SetChildIndex(comboCategoria, 0);
-            tabCadastro.Controls.SetChildIndex(hopePictureBox1, 0);
-            // 
-            // btnCancel
-            // 
-            btnCancel.Location = new Point(667, 10);
-            // 
-            // btnSave
-            // 
-            btnSave.Location = new Point(804, 10);
+            this.tabCadastro.Controls.Add(this.hopePictureBox1);
+            this.tabCadastro.Controls.Add(this.comboCategoria);
+            this.tabCadastro.Controls.Add(this.comboRestaurante);
+            this.tabCadastro.Controls.Add(this.txtId);
+            this.tabCadastro.Controls.Add(this.txtName);
+            this.tabCadastro.Location = new System.Drawing.Point(4, 41);
+            this.tabCadastro.Size = new System.Drawing.Size(804, 412);
+            this.tabCadastro.Controls.SetChildIndex(this.txtName, 0);
+            this.tabCadastro.Controls.SetChildIndex(this.txtId, 0);
+            this.tabCadastro.Controls.SetChildIndex(this.comboRestaurante, 0);
+            this.tabCadastro.Controls.SetChildIndex(this.comboCategoria, 0);
+            this.tabCadastro.Controls.SetChildIndex(this.hopePictureBox1, 0);
             // 
             // txtName
             // 
-            txtName.AnimateReadOnly = false;
-            txtName.AutoCompleteMode = AutoCompleteMode.None;
-            txtName.AutoCompleteSource = AutoCompleteSource.None;
-            txtName.BackgroundImageLayout = ImageLayout.None;
-            txtName.CharacterCasing = CharacterCasing.Normal;
-            txtName.Depth = 0;
-            txtName.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtName.HideSelection = true;
-            txtName.Hint = "Nome";
-            txtName.LeadingIcon = null;
-            txtName.Location = new Point(6, 6);
-            txtName.MaxLength = 32767;
-            txtName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtName.Name = "txtName";
-            txtName.PasswordChar = '\0';
-            txtName.PrefixSuffixText = null;
-            txtName.ReadOnly = false;
-            txtName.RightToLeft = RightToLeft.No;
-            txtName.SelectedText = "";
-            txtName.SelectionLength = 0;
-            txtName.SelectionStart = 0;
-            txtName.ShortcutsEnabled = true;
-            txtName.Size = new Size(601, 48);
-            txtName.TabIndex = 1;
-            txtName.TabStop = false;
-            txtName.TextAlign = HorizontalAlignment.Left;
-            txtName.TrailingIcon = null;
-            txtName.UseSystemPasswordChar = false;
+            this.txtName.AnimateReadOnly = false;
+            this.txtName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtName.Depth = 0;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtName.HideSelection = true;
+            this.txtName.Hint = "Nome";
+            this.txtName.LeadingIcon = null;
+            this.txtName.Location = new System.Drawing.Point(6, 6);
+            this.txtName.MaxLength = 32767;
+            this.txtName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.txtName.Name = "txtName";
+            this.txtName.PasswordChar = '\0';
+            this.txtName.PrefixSuffixText = null;
+            this.txtName.ReadOnly = false;
+            this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtName.SelectedText = "";
+            this.txtName.SelectionLength = 0;
+            this.txtName.SelectionStart = 0;
+            this.txtName.ShortcutsEnabled = true;
+            this.txtName.Size = new System.Drawing.Size(601, 48);
+            this.txtName.TabIndex = 1;
+            this.txtName.TabStop = false;
+            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtName.TrailingIcon = null;
+            this.txtName.UseSystemPasswordChar = false;
             // 
             // txtId
             // 
-            txtId.AnimateReadOnly = false;
-            txtId.AutoCompleteMode = AutoCompleteMode.None;
-            txtId.AutoCompleteSource = AutoCompleteSource.None;
-            txtId.BackgroundImageLayout = ImageLayout.None;
-            txtId.CharacterCasing = CharacterCasing.Normal;
-            txtId.Depth = 0;
-            txtId.Enabled = false;
-            txtId.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtId.HideSelection = true;
-            txtId.Hint = "Id";
-            txtId.LeadingIcon = null;
-            txtId.Location = new Point(613, 6);
-            txtId.MaxLength = 32767;
-            txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtId.Name = "txtId";
-            txtId.PasswordChar = '\0';
-            txtId.PrefixSuffixText = null;
-            txtId.ReadOnly = false;
-            txtId.RightToLeft = RightToLeft.No;
-            txtId.SelectedText = "";
-            txtId.SelectionLength = 0;
-            txtId.SelectionStart = 0;
-            txtId.ShortcutsEnabled = true;
-            txtId.Size = new Size(177, 48);
-            txtId.TabIndex = 2;
-            txtId.TabStop = false;
-            txtId.TextAlign = HorizontalAlignment.Left;
-            txtId.TrailingIcon = null;
-            txtId.UseSystemPasswordChar = false;
+            this.txtId.AnimateReadOnly = false;
+            this.txtId.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtId.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtId.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtId.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtId.Depth = 0;
+            this.txtId.Enabled = false;
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtId.HideSelection = true;
+            this.txtId.Hint = "Id";
+            this.txtId.LeadingIcon = null;
+            this.txtId.Location = new System.Drawing.Point(613, 6);
+            this.txtId.MaxLength = 32767;
+            this.txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.txtId.Name = "txtId";
+            this.txtId.PasswordChar = '\0';
+            this.txtId.PrefixSuffixText = null;
+            this.txtId.ReadOnly = false;
+            this.txtId.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtId.SelectedText = "";
+            this.txtId.SelectionLength = 0;
+            this.txtId.SelectionStart = 0;
+            this.txtId.ShortcutsEnabled = true;
+            this.txtId.Size = new System.Drawing.Size(177, 48);
+            this.txtId.TabIndex = 2;
+            this.txtId.TabStop = false;
+            this.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtId.TrailingIcon = null;
+            this.txtId.UseSystemPasswordChar = false;
             // 
             // comboRestaurante
             // 
-            comboRestaurante.AutoResize = false;
-            comboRestaurante.BackColor = Color.FromArgb(255, 255, 255);
-            comboRestaurante.Depth = 0;
-            comboRestaurante.DrawMode = DrawMode.OwnerDrawVariable;
-            comboRestaurante.DropDownHeight = 174;
-            comboRestaurante.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboRestaurante.DropDownWidth = 121;
-            comboRestaurante.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
-            comboRestaurante.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            comboRestaurante.FormattingEnabled = true;
-            comboRestaurante.Hint = "Restaurante";
-            comboRestaurante.IntegralHeight = false;
-            comboRestaurante.ItemHeight = 43;
-            comboRestaurante.Location = new Point(6, 60);
-            comboRestaurante.MaxDropDownItems = 4;
-            comboRestaurante.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            comboRestaurante.Name = "comboRestaurante";
-            comboRestaurante.Size = new Size(784, 49);
-            comboRestaurante.StartIndex = 0;
-            comboRestaurante.TabIndex = 3;
+            this.comboRestaurante.AutoResize = false;
+            this.comboRestaurante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.comboRestaurante.Depth = 0;
+            this.comboRestaurante.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboRestaurante.DropDownHeight = 174;
+            this.comboRestaurante.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboRestaurante.DropDownWidth = 121;
+            this.comboRestaurante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.comboRestaurante.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.comboRestaurante.FormattingEnabled = true;
+            this.comboRestaurante.Hint = "Restaurante";
+            this.comboRestaurante.IntegralHeight = false;
+            this.comboRestaurante.ItemHeight = 43;
+            this.comboRestaurante.Location = new System.Drawing.Point(6, 60);
+            this.comboRestaurante.MaxDropDownItems = 4;
+            this.comboRestaurante.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.comboRestaurante.Name = "comboRestaurante";
+            this.comboRestaurante.Size = new System.Drawing.Size(784, 49);
+            this.comboRestaurante.StartIndex = 0;
+            this.comboRestaurante.TabIndex = 3;
             // 
             // comboCategoria
             // 
-            comboCategoria.AutoResize = false;
-            comboCategoria.BackColor = Color.FromArgb(255, 255, 255);
-            comboCategoria.Depth = 0;
-            comboCategoria.DrawMode = DrawMode.OwnerDrawVariable;
-            comboCategoria.DropDownHeight = 174;
-            comboCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboCategoria.DropDownWidth = 121;
-            comboCategoria.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
-            comboCategoria.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            comboCategoria.FormattingEnabled = true;
-            comboCategoria.Hint = "Categoria";
-            comboCategoria.IntegralHeight = false;
-            comboCategoria.ItemHeight = 43;
-            comboCategoria.Location = new Point(6, 115);
-            comboCategoria.MaxDropDownItems = 4;
-            comboCategoria.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            comboCategoria.Name = "comboCategoria";
-            comboCategoria.Size = new Size(784, 49);
-            comboCategoria.StartIndex = 0;
-            comboCategoria.TabIndex = 4;
+            this.comboCategoria.AutoResize = false;
+            this.comboCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.comboCategoria.Depth = 0;
+            this.comboCategoria.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboCategoria.DropDownHeight = 174;
+            this.comboCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboCategoria.DropDownWidth = 121;
+            this.comboCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.comboCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.comboCategoria.FormattingEnabled = true;
+            this.comboCategoria.Hint = "Categoria";
+            this.comboCategoria.IntegralHeight = false;
+            this.comboCategoria.ItemHeight = 43;
+            this.comboCategoria.Location = new System.Drawing.Point(6, 115);
+            this.comboCategoria.MaxDropDownItems = 4;
+            this.comboCategoria.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.comboCategoria.Name = "comboCategoria";
+            this.comboCategoria.Size = new System.Drawing.Size(784, 49);
+            this.comboCategoria.StartIndex = 0;
+            this.comboCategoria.TabIndex = 4;
             // 
             // hopePictureBox1
             // 
-            hopePictureBox1.BackColor = Color.White;
-            hopePictureBox1.Image = (Image)resources.GetObject("hopePictureBox1.Image");
-            hopePictureBox1.InitialImage = null;
-            hopePictureBox1.Location = new Point(311, 170);
-            hopePictureBox1.Name = "hopePictureBox1";
-            hopePictureBox1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            hopePictureBox1.Size = new Size(183, 170);
-            hopePictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            hopePictureBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            hopePictureBox1.TabIndex = 5;
-            hopePictureBox1.TabStop = false;
-            hopePictureBox1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            hopePictureBox1.Click += hopePictureBox1_Click;
+            this.hopePictureBox1.BackColor = System.Drawing.Color.White;
+            this.hopePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("hopePictureBox1.Image")));
+            this.hopePictureBox1.InitialImage = null;
+            this.hopePictureBox1.Location = new System.Drawing.Point(311, 170);
+            this.hopePictureBox1.Name = "hopePictureBox1";
+            this.hopePictureBox1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            this.hopePictureBox1.Size = new System.Drawing.Size(183, 170);
+            this.hopePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hopePictureBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.hopePictureBox1.TabIndex = 5;
+            this.hopePictureBox1.TabStop = false;
+            this.hopePictureBox1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.hopePictureBox1.Click += new System.EventHandler(this.hopePictureBox1_Click);
             // 
             // CadastroProduto
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(818, 524);
-            Name = "CadastroProduto";
-            Text = "CadastroProduto";
-            TransparencyKey = Color.Empty;
-            poisonTabControl1.ResumeLayout(false);
-            tabCadastro.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)hopePictureBox1).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(818, 524);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "CadastroProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Produto";
+            this.TransparencyKey = System.Drawing.Color.Empty;
+            this.poisonTabControl1.ResumeLayout(false);
+            this.tabCadastro.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

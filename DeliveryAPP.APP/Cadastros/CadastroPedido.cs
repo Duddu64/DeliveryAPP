@@ -160,11 +160,11 @@ namespace DeliveryAPP.APP.Cadastros
             txtId.Text = linha?.Cells["Id"].Value.ToString();
             comboRestaurante.SelectedValue = linha?.Cells["IdRestaurante"].Value;
             comboCliente.SelectedValue = linha?.Cells["IdCliente"].Value;
-            txtData.Text = DateTime.TryParse(linha?.Cells["Data"].Value.ToString(), out var dataC)
+            txtData.Text = DateTime.TryParse(linha?.Cells["Datacompra"].Value.ToString(), out var dataC)
                ? dataC.ToString("g")
                : "";
 
-            var includes = new List<string>() { "Cliente", "Usuario", "Items", "Items.Produto" };
+            var includes = new List<string>() { "Cliente", "Restaurante", "Item", "Item.Produto" };
             var pedido = _pedidoService.GetById<Pedido>(id, includes);
             _pedidoItems = new List<ItemPedidoModel>();
             foreach (var item in pedido.Item)
@@ -191,10 +191,10 @@ namespace DeliveryAPP.APP.Cadastros
             dataGridView2.DataSource = source;
             dataGridView2.Columns["Id"]!.Visible = false;
             dataGridView2.Columns["IdProduto"]!.HeaderText = @"Id.Produto";
-            dataGridView2.Columns["ValorUnitario"]!.DefaultCellStyle.Format = "C2";
-            dataGridView2.Columns["ValorUnitario"]!.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-            dataGridView2.Columns["ValorTotal"]!.DefaultCellStyle.Format = "C2";
-            dataGridView2.Columns["ValorTotal"]!.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dataGridView2.Columns["Valoruni"]!.DefaultCellStyle.Format = "C2";
+            dataGridView2.Columns["Valoruni"]!.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dataGridView2.Columns["Valortot"]!.DefaultCellStyle.Format = "C2";
+            dataGridView2.Columns["Valortot"]!.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             dataGridView2.Columns["Quantidade"]!.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
 
@@ -255,8 +255,8 @@ namespace DeliveryAPP.APP.Cadastros
 
         private void CalculaTotalVenda()
         {
-             = $@"Valor Total: {string.Format(CultureInfo.CurrentCulture, "{0:C2}", _pedidoItems.Sum(x => x.Valortot))}";
-             = $@"Qtd. Produtos: {_pedidoItems.Sum(x => x.Quantidade)}";
+             var valorTotal = $@"Valor Total: {string.Format(CultureInfo.CurrentCulture, "{0:C2}", _pedidoItems.Sum(x => x.Valortot))}";
+             txtVlTot.Text= $@"Qtd. Produtos: {_pedidoItems.Sum(x => x.Quantidade)}";
         }
 
         private void txtQuantidade_Leave(object sender, EventArgs e)
